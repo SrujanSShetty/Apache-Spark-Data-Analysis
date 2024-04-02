@@ -1,7 +1,7 @@
 
 <img src="github-universe.jpg" alt="Header"/>
 
-<h1 align="center">Hi 👋, I'm Aditya</h1>
+<h1 align="center">Hi 👋, I'm Srujan</h1>
 
 <h3 align="left">🚀 About Me:</h3>
 
