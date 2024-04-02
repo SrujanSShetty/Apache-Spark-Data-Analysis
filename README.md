@@ -22,7 +22,7 @@ Please feel free to reach out to me via email or on LinkedIn.
         <h4>Mail</h4>
         </a>
 <a href="mailto:srujansshettyofficial@gmail.com" target="_blank">
-<img src="Img/mail.png" alt="Gmail" height="20" width="20" />
+<img src="logo_gmail_lockup_default_1x_r5.png" alt="Gmail" height="20" width="20" />
 </a>
     </div>
 </div>
