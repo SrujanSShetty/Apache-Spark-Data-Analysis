@@ -1,5 +1,5 @@
 
-<img src="github-universe.jpg" alt="Header"/>
+<img src="online_data.jpg" alt="Header"/>
 
 <h1 align="center">Hi 👋, I'm Srujan</h1>
 
