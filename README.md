@@ -29,8 +29,9 @@ Please feel free to reach out to me via email or on LinkedIn.
 
 <h3 align="left">Projects:</h3>
 
-<p>Currently, I'm working on a goal  to segment customers based on their purchasing behavior, the target variable would be the customer segments themselves. However, if the objective is to predict future purchases or customer churn, the target variable would be relevant metrics such as purchase frequency or customer retention status.
-
+<p>Currently, I'm working on a goal to create an interactive website that provides data about Fruits upon image upload to help people to keep track on what they consume and its pros and cons. Utilizing Scikit-learn, Matplotlib, OpenCV, NumPy, Python, Seaborn, and Matplotlib for image classification.Impementing UI using Flask, HTML, CSS, JavaScript, Jupyter, VS Code, and PyCharm. Planning on building an app further on to capture images of fruits and get to know about them to bring mobility to users. 
+ 
+Performed customer segmentation to increase revenue for a UK-based online gift store. Conducted 5 unsupervised clustering tasks to identify the best model using evaluation metrics such as accuracy, micro-precision, micro-recall, micro-F1, and micro-AUC. Utilized K-means, DBSCAN, Gaussian Mixture model, Hierarchical. Determined and visualized 3 distinct customer segments with 8 characteristics. 
 In addition, I've worked on  various projects including Developing a pollution level forecasting model using air quality attributes, with a focus on the Beijing PM2.5 dataset. The goal was to create precise and timely PM2.5 concentration predictions for actionable insights. 
 Data preprocessing: Explored the dataset, checked for missing values and duplicate rows, calculated dataset correlations, and used an 80% hold-out validation for training. 
 Regression: Utilized various regression methods, including the full model, backward elimination using p-value in t-test and AIC, forward selection using AIC, and stepwise selection using AIC. 
