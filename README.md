@@ -4,7 +4,7 @@ Please feel free to reach out to me via email or LinkedIn.
 <div class="container"> <div class="item"> <h4>LinkedIN</h4> <a href="https://linkedin.com/in/srujanshetty" target="_blank" style="margin-right: 30px;"><img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="srujanshetty" height="20" width="20" /> </a> </div> <div class="item"> <h4>Mail</h4> <a href="mailto:srujansshettyofficial@gmail.com" target="_blank"> <img src="logo_gmail_lockup_default_1x_r5.png" alt="Gmail" height="40" width="150" /> </a> </div> </div> <h3 align="left">Projects:</h3> <p>**Advanced AI: Identifying Fruit Varieties** - Developed an interactive website that provides information about fruit varieties upon image upload, including calories, pros, and cons of consumption. - Utilized Scikit-learn, Matplotlib, OpenCV, NumPy, Python, Seaborn, and Matplotlib for image classification. - Implemented UI using Flask, HTML, CSS, JavaScript, Jupyter, VS Code, and PyCharm.
 Customer Segmentation and Market Basket Analysis
 
-Performed customer segmentation to increase revenue for a UK-based online gift store using the On-line Retail dataset.
+Performed customer segmentation to increase revenue for a UK-based online gift store using the On-line Retail dataset. 
 Conducted 5 unsupervised clustering tasks to identify the best model, evaluating metrics such as accuracy, micro-precision, micro-recall, micro-F1, and micro-AUC.
 Applied K-means, DBSCAN, Gaussian Mixture Model, and Hierarchical Clustering to determine and visualize 3 distinct customer segments with 8 characteristics.
 Pollution Level Forecasting
