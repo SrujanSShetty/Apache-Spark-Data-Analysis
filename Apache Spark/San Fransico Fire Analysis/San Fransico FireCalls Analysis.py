@@ -52,3 +52,10 @@ if __name__=="__main__":
     correlation = df.filter(year("CallDate")==2018).groupBy("Neighborhood","Zipcode").count().orderBy(col("count").desc())
     print(f"6.Is there a correlation between neighborhood, zip code, and number of fire calls?:{correlation.show(10)}")#Top 10 count in descending
     
+    #7.How can we use Parquet files or SQL tables to store this data and read it back?
+    df.write.format("parquet").mode("overwrite").save("sf-fire-calls.parquet")
+    parquet_df=spark.read.parquet("sf-fire-calls.parquet")
+    parquet_df.show(6)
+    
+    #Stop Spark Session
+    spark.stop()
