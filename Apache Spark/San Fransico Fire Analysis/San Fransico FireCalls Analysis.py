@@ -11,7 +11,7 @@ if __name__=="__main__":
     #Building the Spark Session using the SparkSession APIs
     spark = (SparkSession
          .builder
-         .appname("SF Fire Calls Analysis")
+         .appName("SF Fire Calls Analysis")
          .getOrCreate())
     
     #Get the SF fire calls dataset path from the Command line.
