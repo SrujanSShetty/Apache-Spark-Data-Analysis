@@ -22,3 +22,6 @@ if __name__=="__main__":
           .option("header","true")
           .option("inferSchema","true")
           .load(file_path))
+    
+    #Convert CallDate Column to Date format
+    df=df.withcolumn("CallDate", to_date(col("CallDate","MM/dd/yyyy")))
