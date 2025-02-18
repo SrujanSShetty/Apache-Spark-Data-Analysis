@@ -35,3 +35,7 @@ if __name__=="__main__":
     #2.What months within the year 2018 saw the highest number of fire calls?
     highest_firecalls_by_monthof2018 = df.filter(year("CallDate")==2018).groupBy(month("CallDate").alias("Month")).count().orderBy(col("count").desc())
     print(f"2.What months within the year 2018 saw the highest number of fire calls?:{highest_firecalls_by_monthof2018.show()}")
+    
+    #3.Which neighborhood in San Francisco generated the most fire calls in 2018?
+    highest_firecalls_by_neighborhood2018 = df.filter(year("CallDate")==2018).groupBy("Neighborhood").count().orderBy(col("count").desc())
+    print(f"3.Which neighborhood in San Francisco generated the most fire calls in 2018?:{highest_firecalls_by_neighborhood2018}")
