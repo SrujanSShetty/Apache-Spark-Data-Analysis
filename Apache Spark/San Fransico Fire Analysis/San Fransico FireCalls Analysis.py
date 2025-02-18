@@ -25,3 +25,9 @@ if __name__=="__main__":
     
     #Convert CallDate Column to Date format
     df=df.withcolumn("CallDate", to_date(col("CallDate","MM/dd/yyyy")))
+    
+    #Answering all 7 questions in order
+    
+    #1.What were all the different types of fire calls in 2018?
+    fire_calltype_2018 = df.filter(year("CallDate")== 2018).select("CallType").distinct()
+    print(f"What were all the different types of fire calls in 2018?: {fire_calltype_2018.show()}")
