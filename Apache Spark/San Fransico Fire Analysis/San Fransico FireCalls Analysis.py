@@ -39,3 +39,7 @@ if __name__=="__main__":
     #3.Which neighborhood in San Francisco generated the most fire calls in 2018?
     highest_firecalls_by_neighborhood2018 = df.filter(year("CallDate")==2018).groupBy("Neighborhood").count().orderBy(col("count").desc())
     print(f"3.Which neighborhood in San Francisco generated the most fire calls in 2018?:{highest_firecalls_by_neighborhood2018}")
+    
+    #4.Which neighborhoods had the worst response times to fire calls in 2018?
+    worst_responsetime_neighborhood2018 = df.filter(year("CallDate")==2018).groupBy("Neighborhood").agg(avg("Delay").alias("Avg_response_time")).orderBy(col("Avg_response_time").desc())
+    print(f"4.Which neighborhoods had the worst response times to fire calls in 2018?:{worst_responsetime_neighborhood2018}")
