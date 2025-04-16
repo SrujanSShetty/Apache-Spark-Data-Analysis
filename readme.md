@@ -88,8 +88,9 @@ Shoutout to mentors and tech leads like **Zach Wilson** and **Deepak Goyal** who
 Clone the repo, edit the bucket path and dataset name, and run the notebook on your Spark setup!
 
 ```bash
-git clone https://github.com/yourusername/spark-compression-benchmark.git
-cd spark-compression-benchmark
+git clone https://github.com/SrujanSShetty/Apache-Spark-Data-Analysis.git
+cd Compression Benchmarking with MinIO S3
+
 ```
 
 Feel free to submit a pull request if you improve it!
