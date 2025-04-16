@@ -35,7 +35,7 @@ df = spark.read.csv('s3a://itmd521/50.txt')
 
 ## 📦 Compression Formats Tested
 
-![Table Output](images/table.png.png)
+![Table Output](images/table.png)
 
 *Compressed files saved to MinIO*
 
@@ -70,9 +70,9 @@ df = spark.read.csv('s3a://itmd521/50.txt')
 ![Running Spark Job UI](images/Running%20Job%20Screenshot.png)  
 
 
-![Finished Spark Job UI](images/Finished%20Job.png.png)  
+![Finished Spark Job UI](images/Finished%20Job.png)  
 
-![MinIO Output](images/Minio%20Output.jpg.png)  
+![MinIO Output](images/Minio%20Output.jpg)  
 *Compressed files saved to MinIO*
 
 ## 🙌 Acknowledgments
