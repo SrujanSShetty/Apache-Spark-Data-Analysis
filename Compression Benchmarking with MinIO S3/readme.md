@@ -35,16 +35,7 @@ df = spark.read.csv('s3a://itmd521/50.txt')
 
 ## 📦 Compression Formats Tested
 
-| Compression | Format  | Spark Duration | Performance | Notes                         |
-|-------------|---------|----------------|-------------|-------------------------------|
-| **GZIP**    | CSV     | ⏱️ 1.0 h        | ✅ Fastest   | High compression, archival use |
-| **LZ4 (Iz4)** | CSV   | ⏱️ 1.0 h        | ✅ Fastest   | Balanced, efficient for CSV   |
-| **ZSTD**    | Parquet | ⏱️ 1.1 h        | 🟡 Moderate  | Great compression, good speed |
-| **Brotli**  | Parquet | ⏱️ 1.1 h        | 🟡 Moderate  | Manual setup, high compression |
-| **Snappy**  | Parquet | ⏱️ 1.2 h        | 🔴 Slowest   | Spark default, good compatibility |
-
-
-![Table Output](images/.png)
+![Table Output](images/table.png.png)
 
 *Compressed files saved to MinIO*
 
@@ -76,10 +67,12 @@ df = spark.read.csv('s3a://itmd521/50.txt')
 
 ## 📊 Screenshots
 
-![Spark Job UI](images/spark-job-ui.png)  
-*Sample job stats from the Spark UI*
+![Running Spark Job UI](images/Running%20Job%20Screenshot.png)  
 
-![MinIO Output](images/minio-files.png)  
+
+![Finished Spark Job UI](images/Finished%20Job.png.png)  
+
+![MinIO Output](images/Minio%20Output.jpg.png)  
 *Compressed files saved to MinIO*
 
 ## 🙌 Acknowledgments
