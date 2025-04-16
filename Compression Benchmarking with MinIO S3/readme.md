@@ -1,3 +1,4 @@
+
 # 🚀 Apache Spark Compression Benchmarking with MinIO S3
 
 > **A personal curiosity project benchmarking how different compression codecs perform in Apache Spark when writing to S3-compatible storage (MinIO).**
@@ -30,3 +31,82 @@ The dataset used was a fixed-width `.txt` weather file stored in MinIO (`s3a://i
 ```python
 df = spark.read.csv('s3a://itmd521/50.txt')
 # String manipulation follows...
+```
+
+## 📦 Compression Formats Tested
+
+| Compression | Format  | Spark Duration | Performance | Notes                         |
+|-------------|---------|----------------|-------------|-------------------------------|
+| **GZIP**    | CSV     | ⏱️ 1.0 h        | ✅ Fastest   | High compression, archival use |
+| **LZ4 (Iz4)** | CSV   | ⏱️ 1.0 h        | ✅ Fastest   | Balanced, efficient for CSV   |
+| **ZSTD**    | Parquet | ⏱️ 1.1 h        | 🟡 Moderate  | Great compression, good speed |
+| **Brotli**  | Parquet | ⏱️ 1.1 h        | 🟡 Moderate  | Manual setup, high compression |
+| **Snappy**  | Parquet | ⏱️ 1.2 h        | 🔴 Slowest   | Spark default, good compatibility |
+
+
+![Table Output](images/.png)
+
+*Compressed files saved to MinIO*
+
+
+
+
+
+> **Note**: Brotli required manual JAR setup:
+> 
+> ```xml
+> <repository>
+>   <id>jitpack.io</id>
+>   <url>https://jitpack.io</url>
+> </repository>
+>
+> <dependency>
+>   <groupId>com.github.rdblue</groupId>
+>   <artifactId>brotli-codec</artifactId>
+>   <version>0.1.1</version>
+> </dependency>
+> ```
+
+## 📈 Key Takeaways
+
+- **GZIP** and **LZ4** were fastest for CSV formats.
+- **ZSTD** offers a strong balance for Parquet and is supported in newer Spark versions.
+- **Snappy**, while widely compatible, had the slowest write times in this test.
+- **Brotli** performed well but requires manual codec setup in Spark.
+
+## 📊 Screenshots
+
+![Spark Job UI](images/spark-job-ui.png)  
+*Sample job stats from the Spark UI*
+
+![MinIO Output](images/minio-files.png)  
+*Compressed files saved to MinIO*
+
+## 🙌 Acknowledgments
+
+Huge thanks to **Professor Jeremy Hajek** and the **Illinois Tech Infrastructure Team** for setting up Spark and MinIO access for students!
+
+Shoutout to mentors and tech leads like **Zach Wilson** and **Deepak Goyal** whose insights inspired me to explore deeper into compression and Spark performance tuning.
+
+---
+
+## 🧪 Want to Try This Yourself?
+
+Clone the repo, edit the bucket path and dataset name, and run the notebook on your Spark setup!
+
+```bash
+git clone https://github.com/yourusername/spark-compression-benchmark.git
+cd spark-compression-benchmark
+```
+
+Feel free to submit a pull request if you improve it!
+
+---
+
+## 🏷️ Tags
+
+`#ApacheSpark` `#MinIO` `#CompressionBenchmark` `#Brotli` `#ZSTD` `#GZIP` `#Snappy` `#LZ4` `#Parquet` `#BigData` `#IllinoisTech` `#SparkSQL`
+
+---
+
+> 📬 Have questions or want help setting up Spark with MinIO? Feel free to reach out or open an issue!
